@@ -19,8 +19,7 @@
     "tsc": "tsc -b src/main && tsc -b src/webworker && tsc --project src/main/tsconfig-cjs.json",
     "rollup": "rollup --config rollup.config.js",
     "compile": "node --experimental-modules --experimental-json-modules scripts/compile.cjs",
-    "build": "npm run clean && npm run tsc && npm run rollup && npm run compile",
-    "prepare": "node scripts/checkver.cjs && npm run build"
+    "build": "npm run clean && npm run tsc && npm run rollup && npm run compile"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
